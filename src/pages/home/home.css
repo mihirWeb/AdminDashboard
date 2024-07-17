@@ -1,0 +1,12 @@
+.home{
+    flex: 4;
+    width: 100vw;
+}
+
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+    @media only screen and (max-width: 412px){
+        flex-direction: column ;
+    }
+}

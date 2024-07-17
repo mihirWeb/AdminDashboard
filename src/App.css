@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    @media only screen and (max-width: 412px){
+        flex-direction: column-reverse;
+    }
+}
+
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
