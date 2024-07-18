@@ -1,7 +1,7 @@
 import axios from "axios";
 // import { useSelector } from "react-redux";
 
-const BASE_URL = "http://localhost:3000/api/v2";
+const BASE_URL = "https://urbandenapi.onrender.com/api/v2";
 const storageData = localStorage.getItem("persist:root");
 let TOKEN
 if(storageData){
