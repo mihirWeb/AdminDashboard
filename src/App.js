@@ -17,20 +17,20 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('error', e => {
-        if (e.message === 'ResizeObserver loop limit exceeded') {
-            const resizeObserverErrDiv = document.getElementById(
-                'webpack-dev-server-client-overlay-div'
-            );
-            const resizeObserverErr = document.getElementById(
-                'webpack-dev-server-client-overlay'
-            );
-            if (resizeObserverErr) {
-                resizeObserverErr.setAttribute('style', 'display: none');
-            }
-            if (resizeObserverErrDiv) {
-                resizeObserverErrDiv.setAttribute('style', 'display: none');
-            }
+      if (e.message === 'ResizeObserver loop limit exceeded') {
+        const resizeObserverErrDiv = document.getElementById(
+          'webpack-dev-server-client-overlay-div'
+        );
+        const resizeObserverErr = document.getElementById(
+          'webpack-dev-server-client-overlay'
+        );
+        if (resizeObserverErr) {
+          resizeObserverErr.setAttribute('style', 'display: none');
         }
+        if (resizeObserverErrDiv) {
+          resizeObserverErrDiv.setAttribute('style', 'display: none');
+        }
+      }
     });
   }, []);
 
@@ -42,15 +42,15 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route path="/login">
-  {admin ? <Redirect to="/" /> : <Login />}
-</Route>
+        <Route exact path="/">
+          {admin ? <Redirect to="/home" /> : <Login />}
+        </Route>
         {admin && (
           <>
             <Topbar />
             <div className="container">
               <Sidebar />
-              <Route exact path="/">
+              <Route path="/home">
                 <Home />
               </Route>
               <Route path="/users">

@@ -1,6 +1,6 @@
 .newProduct {
   flex: 4;
-  @media only screen and (max-width: 412px){
+  @media only screen and (max-width: 500px){
     margin: 30px;
   }
 }
@@ -43,7 +43,7 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
-  @media only screen and (max-width: 412px){
+  @media only screen and (max-width: 500px){
     width: 100%;
   }
 }

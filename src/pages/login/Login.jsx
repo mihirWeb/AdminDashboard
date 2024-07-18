@@ -50,14 +50,14 @@ const Login = () => {
           <input
             type='username'
             name='username'
-            placeholder='Your Username'
+            placeholder='demoAdmin'
             onChange={(e) => setUsername(e.target.value)}
             className="rounded px-4 py-3 w-full mt-1 bg-white text-gray-900 border border-gray-200 focus:border-indigo-400 focus:outline-none focus:ring focus:ring-indigo-100"
           />
           <input
             type='password'
             name='password'
-            placeholder='Your Password'
+            placeholder='1234567890'
             onChange={(e) => setPassword(e.target.value)}
             className="rounded px-4 py-3 w-full mt-1 bg-white text-gray-900 border border-gray-200 focus:border-indigo-400 focus:outline-none focus:ring focus:ring-indigo-100"
           />
